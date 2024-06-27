@@ -1,0 +1,30 @@
+
+
+GET http://localhost:5000/Books
+###
+
+POST http://localhost:5000/Books
+ Content-Type: application/json
+  Accept: application/json
+
+   {
+    "id": 2,
+    "Title": "River and the source",
+    "Author": "Kagwe",
+    "Publication": 2012
+ }
+
+### update books
+
+PUT http://localhost:5000/Books/2
+Content-Type: application/json
+Accept: application/json
+
+{
+    "Author": "test2"
+    
+}
+
+### delete books
+
+DELETE http://localhost:8000/Books
